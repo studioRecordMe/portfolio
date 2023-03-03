@@ -1,0 +1,112 @@
+@import"https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&display=swap";
+*{ margin: 0; padding: 0; }
+a{ color: inherit; text-decoration: none; }
+li{ list-style: none; }
+html,body{ font-family: "Judson"; background-color:#e6e6e6; }
+
+div#wrap {
+  margin: 3.125em 19.375em 6.25em; width: 75em; height: 51.25em; border-radius: 1.875em; position: fixed; background-color: #fff; 
+}
+div.design {
+  width: 100%; position: relative; top: 0; right: 0; height: 820px;
+}
+
+h2.title {
+  position: absolute; top: 40px; left: 50px; font-size: 1.875em; font-family: 'Lexend Exa'; color: #fff;
+}
+p.line {
+  position: absolute; top: 100px; left: 50px; width: 250px; height: 3px; background-color: #fff;
+}
+
+div.tab_contents {
+  width: 100%; margin: 0 auto;
+}
+input[type=radio] {
+  display: none;
+}
+div.tab_contents div.right {
+  position: absolute; top: 0; right: 0; width: 600px; height: 820px;
+}
+div.tab_contents div.right img {
+  margin: auto; padding-top: 50%; transform: translateY(-17.5%);
+}
+div.tab_contents div.left {
+  position: absolute; top: 0; left: 0; width: 600px; background-color: rgba(51, 51, 51, 0.982); height: 820px; border-top-right-radius: 0; border-bottom-right-radius: 0;
+}
+div.tab_contents div.left label {
+  margin-top: 30px;
+}
+div.tab_contents div.left label:nth-of-type(1), div.tab_contents div.left label:nth-of-type(2), div.tab_contents div.left label:nth-of-type(3) {
+  margin-top: 160px;
+}
+div.tab_contents div.left label:nth-of-type(2), div.tab_contents div.left label:nth-of-type(5), div.tab_contents div.left label:nth-of-type(8) {
+  margin-left: 10px; margin-right: 10px;
+}
+div.contbox {
+  width: 50%; display: none; 
+}
+div.contbox > img {
+  width: auto; height: 500px;
+}
+div.contbox:nth-of-type(3) > img {
+  width: 380px; height: auto; 
+}
+div.contbox:nth-of-type(4) > img {
+  width: 335px; height: auto; 
+}
+div.contbox:nth-of-type(5) > img {
+  width: 500px; height: auto; 
+}
+div.contbox:nth-of-type(6) > img {
+  width: 500px; height: auto;
+}
+div.contbox:nth-of-type(7) > img {
+  width: 180px; height: auto;
+}
+div.contbox:nth-of-type(8) > img {
+  width: 500px; height: auto;
+}
+
+div.btn {
+  box-sizing: border-box; width: 100%; text-align: center; border-radius: 1.875em;
+}
+
+/* label를 버튼 형식으로 변환 */
+label[for*=tab] {
+  display: inline-block; 
+  overflow: hidden;  background-color: #aaa; border-radius: 20px; border: 2px solid #111;
+}
+label[for*=tab] > img {
+  display: block; width: 154px; height: 154px; cursor: pointer; object-fit: cover; opacity: .7; transition: .5s;
+}
+label[for*=tab] > img:hover {
+  scale: 1.2; opacity: 1;
+}
+
+input[id=tab01]:checked ~ div.cont01 {
+  display: block;  
+}
+input[id=tab02]:checked ~ div.cont02 {
+  display: block; 
+}
+input[id=tab03]:checked ~ div.cont03 {
+  display: block; margin-top: -40px;
+}
+input[id=tab04]:checked ~ div.cont04 {
+  display: block; margin-top: -55px;
+}
+input[id=tab05]:checked ~ div.cont05 {
+  display: block; padding-top: 25px;
+}
+input[id=tab06]:checked ~ div.cont06 {
+  display: block; padding-top: 100px;
+}
+input[id=tab07]:checked ~ div.cont07 {
+  display: block; margin-top: -55px;
+}
+input[id=tab08]:checked ~ div.cont08 {
+  display: block; padding-top: 30px;
+}
+input[id=tab09]:checked ~ div.cont09 {
+  display: block;
+}

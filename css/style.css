@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+html, body {
+  font-family: "Judson";
+  background-color: #E6E6E6;
+}
+
+.btn {
+  display: block;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.btn.black {
+  background-color: #111111;
+  color: #fff;
+}
+
+.btn.purple {
+  background-color: #4934C7;
+  color: #fff;
+}
+
+.btn.cyaan {
+  background-color: #61FFD7;
+}
+
+.btn.hotpink {
+  background-color: #FF4588;
+}
+
+div#wrap {
+  margin: 3.125em 19.375em 6.25em;
+  width: 75em;
+  height: 51.25em;
+  border-radius: 1.875em;
+  position: fixed;
+  background-color: #fff;
+}
+div#wrap div.main {
+  position: absolute;
+  width: 68.75em;
+  height: 45em;
+  top: 3.125em;
+  left: 3.125em;
+  background: #111111;
+  border-radius: 1.875em;
+}
+div#wrap div.main h1 {
+  color: #fff;
+  font-size: 4.063em;
+  text-align: right;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+div#wrap div.main p {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  font-size: 1.25em;
+  color: #fff;
+  text-align: right;
+}
+div#wrap div.main img {
+  position: absolute;
+  scale: 0.7;
+}
+div#wrap div.main img.ellipse {
+  top: 35%;
+  left: 1%;
+}
+div#wrap div.main img.rectangle1 {
+  top: 53.5%;
+  left: 13%;
+}
+div#wrap div.main img.rectangle2 {
+  top: 53.5%;
+  left: 25%;
+}
+div#wrap div.aboutMe {
+  width: 100%;
+  display: flex;
+}
+div#wrap div.aboutMe div {
+  width: 50%;
+  height: 820px;
+}
+div#wrap div.aboutMe div.left {
+  background-color: #4934C7;
+  border-radius: 1.875em 0px 0px 1.875em;
+  position: relative;
+  color: #fff;
+  height: 820px;
+}
+div#wrap div.aboutMe div.left h2.title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 1.875em;
+  font-family: "Lexend Exa";
+}
+div#wrap div.aboutMe div.left p.line {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 250px;
+  height: 3px;
+  background-color: #fff;
+}
+div#wrap div.aboutMe div.left img.profileImage {
+  position: absolute;
+  top: 195px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div#wrap div.aboutMe div.left p {
+  width: 600px;
+  font-size: 1.125em;
+  text-align: center;
+  position: absolute;
+  top: 500px;
+  left: 0;
+}
+div#wrap div.aboutMe div.right {
+  position: relative;
+}
+div#wrap div.aboutMe div.right div:first-child {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 376px;
+  height: 159px;
+}
+div#wrap div.aboutMe div.right div:first-child h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+div#wrap div.aboutMe div.right div:first-child h4 {
+  margin: 11px 0 40px 40px;
+  font-size: 1em;
+  font-weight: normal;
+  width: 336px;
+  line-height: 1.8;
+}
+div#wrap div.aboutMe div.right div:nth-child(2) {
+  position: absolute;
+  top: 243px;
+  left: 50px;
+  width: 430px;
+  height: 257px;
+}
+div#wrap div.aboutMe div.right div:nth-child(2) h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+div#wrap div.aboutMe div.right div:nth-child(2) h4 {
+  margin: 11px 0 40px 40px;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.8;
+}
+div#wrap div.aboutMe div.right div:last-child {
+  position: absolute;
+  top: 522px;
+  left: 50px;
+  width: 642px;
+  height: 262px;
+}
+div#wrap div.aboutMe div.right div:last-child h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+}
+div#wrap div.aboutMe div.right div:last-child div {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  width: 480px;
+  height: 82px;
+}
+div#wrap div.aboutMe div.right div:last-child div img.skill {
+  width: 82px;
+  height: 82px;
+}
+div#wrap div.aboutMe div.right div:last-child div:first-child {
+  top: 0;
+}
+div#wrap div.aboutMe div.right div:last-child div:last-child {
+  top: 160px;
+}
+div#wrap div.portfolio {
+  width: 100%;
+  height: 100%;
+  background-color: #61FFD7;
+  border-radius: 1.875em 1.875em;
+}
+div#wrap div.portfolio h2.title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 1.875em;
+  font-family: "Lexend Exa";
+}
+div#wrap div.portfolio p.line {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 250px;
+  height: 3px;
+  background-color: #151515;
+}
+div#wrap div.portfolio div.project {
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+div#wrap div.portfolio div.project div.swiper {
+  width: 850px;
+}
+div#wrap div.portfolio div.project div.swiper div.swiper-wrapper {
+  width: 100%;
+  padding-top: 10px;
+}
+div#wrap div.portfolio div.project div.swiper div.swiper-wrapper div.swiper-slide div.inner {
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+div#wrap div.portfolio div.project div.swiper div.swiper-wrapper div.swiper-slide div.inner img {
+  position: absolute;
+  width: 700px;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  border-radius: 25px;
+}
+div#wrap div.portfolio div.project div.swiper-button-prev, div#wrap div.portfolio div.project div.swiper-button-next {
+  color: #111111;
+}
+div#wrap div.design {
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+div#wrap div.design h2.title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 1.875em;
+  font-family: "Lexend Exa";
+}
+div#wrap div.design p.line {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 250px;
+  height: 3px;
+  background-color: #151515;
+}
+div#wrap div.contactMe {
+  width: 100%;
+  position: relative;
+}
+div#wrap div.contactMe h2.title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 1.875em;
+  font-family: "Lexend Exa";
+}
+div#wrap div.contactMe p {
+  position: absolute;
+  top: 160px;
+  left: 216.28px;
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+div#wrap div.contactMe p.line {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 250px;
+  height: 3px;
+  background-color: #151515;
+}
+div#wrap div.contactMe p.rectangle3 {
+  position: absolute;
+  width: 800px;
+  height: 20px;
+  left: 200px;
+  top: 179px;
+  background: linear-gradient(180deg, #4934C7 0%, rgba(73, 52, 199, 0.3) 0%, rgba(97, 255, 215, 0.3) 32.81%, rgba(255, 69, 136, 0.3) 68.23%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 40px;
+}
+div#wrap div.contactMe div.inbox {
+  width: 800px;
+  display: flex;
+  position: absolute;
+  top: 265px;
+  left: 200px;
+  justify-content: space-between;
+}
+div#wrap div.contactMe div.inbox div {
+  width: 380px;
+  height: 444px;
+  padding: 20px 25px 41px;
+  background-color: #F1F1F1;
+  box-sizing: border-box;
+}
+div#wrap div.contactMe div.inbox div label {
+  font-size: 18px;
+  font-weight: bold;
+}
+div#wrap div.contactMe div.inbox div input {
+  width: 330px;
+  height: 68px;
+  margin: 22px 0 25px;
+  padding: 13px 18px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+div#wrap div.contactMe div.inbox div.left {
+  border-bottom-left-radius: 50px;
+}
+div#wrap div.contactMe div.inbox div.right {
+  border-top-right-radius: 50px;
+}
+div#wrap div.contactMe div.inbox div.right input:last-child {
+  width: 330px;
+  height: 200px;
+}
+div#wrap div.contactMe div.inbox input.send {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  display: block;
+  border: none;
+  background-color: #D9D9D9;
+  font-weight: bold;
+  font-family: "Judson";
+  font-size: 16px;
+  cursor: pointer;
+}
+div#wrap div.contactMe div.inbox input.send:hover {
+  box-shadow: 1px 5px 10px rgba(21, 21, 21, 0.35);
+}
+
+a.home {
+  position: fixed;
+  left: 1510px;
+  top: 155px;
+}
+
+a.aboutMe {
+  position: fixed;
+  left: 1510px;
+  top: 225px;
+}
+
+a.portfolio {
+  position: fixed;
+  left: 1510px;
+  top: 295px;
+}
+
+a.design {
+  position: fixed;
+  left: 1510px;
+  top: 365px;
+}
+
+a.contactUs {
+  position: fixed;
+  left: 1510px;
+  top: 435px;
+}
+
+span.copy {
+  position: fixed;
+  left: 1210.84px;
+  top: 895px;
+  color: #555;
+}

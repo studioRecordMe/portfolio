@@ -1,0 +1,307 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { margin: 0; padding: 0; }
+a { color: inherit; text-decoration: none; }
+li { list-style: none; }
+img { display: block; }
+
+html, body { font-family: 'Rubik', 'Noto Sans KR', sans-serif; }
+
+a.on { opacity: .3; }
+
+div#wrap, div#nav_wrap {
+  width: 100%; 
+}
+
+div#wrap div#nav_wrap {
+  position: fixed; background-color: rgba(0, 0, 0, .3); height: 100%; z-index: 5;
+  /* display: none; */
+}
+div#wrap div#nav_wrap nav {
+  width: 20%; height: 100%; background-color: #fff;
+}
+div#wrap div#nav_wrap nav i.fa-rectangle-xmark {
+  scale: 2; margin-left: 87.3%; margin-top: 10%; opacity: .3; cursor: pointer;
+}
+div#wrap div#nav_wrap nav i.fa-rectangle-xmark:hover {
+  opacity: .7; scale: 2.3;
+}
+div#wrap div#nav_wrap nav div.navTop {
+  width: 100%; position: relative;
+}
+div#wrap div#nav_wrap nav div.navTop h1 {
+  font-size: 1.125em; font-style: italic; padding-top: 4%; text-align: center;
+}
+div#wrap div#nav_wrap nav div.navTop input {
+  width: 85%; margin: 1.8% 8%; line-height: 2.5; padding: 0 4%; box-sizing: border-box;
+}
+div#wrap div#nav_wrap nav div.navTop i.fa-solid.fa-magnifying-glass {
+  position: absolute; top: 63%; right: 10%;
+}
+div#wrap div#nav_wrap nav ul.gnb {
+  width: 100%; padding: 3.5% 8%; box-sizing: border-box;
+}
+div#wrap div#nav_wrap nav ul.gnb > li > a, div#wrap div#nav_wrap nav ul.gnb li.hide > div.title  {
+  font-size: 1em; font-weight: 600; line-height: 2; cursor: pointer; 
+}
+div#wrap div#nav_wrap nav ul.gnb li, div#wrap div#nav_wrap nav ul.gnb li.hide > ul.sub {
+  font-size: 0.9375em; font-weight: normal;
+}
+div#wrap div#nav_wrap nav ul.gnb li.hide > div.title {
+  position: relative; 
+}
+div#wrap div#nav_wrap nav ul.gnb li.hide > div.title > i {
+  position: absolute; top: 25%; right: 0;
+}
+div#wrap div#nav_wrap nav ul.gnb li.hide > ul.sub li {
+  margin-left: 3%; line-height: 2;
+}
+div#wrap div#nav_wrap nav ul.gnb li.hide > ul.sub li:last-child {
+  margin-bottom: 3%; 
+}
+div#wrap div#nav_wrap nav ul.gnb li.hide > ul.sub > li > a {
+  display: block; 
+}
+div#wrap div#nav_wrap nav ul.gnb li.hide > ul.sub > li:hover > a {
+  border-right: 3px solid #e0805d; width: 95%;
+}
+div#wrap div#nav_wrap nav > div.navBottom {
+  text-align: center;
+}
+div#wrap div#nav_wrap nav > div.navBottom > i {
+  scale: 1.3; color: rgba(0, 0, 0, .3); margin-right: 4%; cursor: pointer; 
+}
+div#wrap div#nav_wrap nav > div.navBottom > i:last-child {
+  margin-right: 0;
+}
+div#wrap div#nav_wrap nav > div.navBottom > i:hover {
+  scale: 1.5; color: rgba(0, 0, 0, .7);
+}
+
+
+div#wrap div.inner {
+  width: 1300px; margin: 0 auto; 
+}
+div#wrap div.inner section header {
+  width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1% 2%; box-sizing: border-box; border-bottom: 1px solid #ddd;
+}
+div#wrap div.inner section header h1 {
+  font-family: 'Rubic'; font-style: italic; font-weight: bold; font-size: 1.5em; 
+}
+div#wrap div.inner section header i {
+  font-size: 1.5em;
+}
+div#wrap div.inner section header i:hover {
+  opacity: .7; cursor: pointer;
+}
+div#wrap div.inner section header div i {
+  font-size: 1.5em; margin-right: 10px;
+}
+div#wrap div.inner section header div i:nth-child(2) {
+  margin-right: 0;
+}
+
+div#wrap div.inner section {
+  width: 100%; 
+}
+div#wrap div.inner section article {
+  margin-top: 3.9%; padding: 0 5.1%;  
+}
+div#wrap div.inner section article::after {
+  content: ""; display: block; clear: both;
+}
+div#wrap div.inner section article div { 
+  position: relative; width: 718px; height: 718px; overflow: hidden; border: 1px solid #777; cursor: pointer; box-sizing: border-box; float: left;
+}
+div#wrap div.inner section article div img {
+  position: absolute; top: 0; left: 0; width: 718px; line-height: 718px; transition: .5s;
+}
+div#wrap div.inner section article div h2 {
+  position: absolute; top: 0; left: 0; font-size: 35px; font-weight: bold; color: #fff; opacity: 0;  background-color: rgba(0, 0, 0, .4); width: 718px; height: 718px; text-align: center; line-height: 718px; 
+}
+div#wrap div.inner section article div:nth-of-type(2) {
+  width: 400px; height: 334px; margin-left: 49px;
+}
+div#wrap div.inner section article div:nth-of-type(2) img {
+  position: absolute; top: 0; left: 0; width: 400px; line-height: 334px; 
+}
+div#wrap div.inner section article div:nth-of-type(2) h2 {
+  width: 400px; height: 334px; line-height: 334px; 
+}
+div#wrap div.inner section article div:nth-of-type(3) {
+  width: 400px; height: 334px; margin-left: 49px; margin-top: 50px
+}
+div#wrap div.inner section article div:nth-of-type(3) img {
+  position: absolute; top: 0; left: 0; width: 400px; line-height: 334px;
+}
+div#wrap div.inner section article div:nth-of-type(3) h2 {
+  width: 400px; height: 334px; line-height: 334px; 
+}
+div#wrap div.inner section article div:hover img {
+  scale: 1.3; 
+}
+div#wrap div.inner section article div:hover h2 {
+  opacity: 1;
+}
+/* login.html */
+div#wrap div.inner section article.login  {
+  width: 30%; margin: 0 auto; margin-top: 50px;
+}
+div#wrap div.inner section article.login div.login {
+  width: 100%; margin: 0 auto;  border: none; height: 450px; background-color: rgba(0, 0, 0, .03); border-radius: 3%;
+}
+div#wrap div.inner section article.login div.login form {
+  width: inherit; padding: 8%;  box-sizing: border-box;
+}
+div#wrap div.inner section article.login div.login form h3 {
+width: inherit; font-size: 1.8em;  color: #242424; margin-bottom: 5%;
+}
+div#wrap div.inner section article.login div.login form p {
+  width: inherit; font-size: 1em; color: #242424; font-weight: lighter;
+}
+div#wrap div.inner section article.login div.login form input {
+  width: inherit; padding: 2.5%; margin: 2% auto 4%; box-sizing: border-box; 
+}
+div#wrap div.inner section article.login div.login form input.login {
+  background-color: #242424; color: #ddd; border: .5px solid #777; transition: .5s;
+}
+div#wrap div.inner section article.login div.login form input.login:hover {
+  background-color: #fff; color: #242424; font-weight: 700; cursor: pointer;
+}
+div#wrap div.inner section article.login div.login form input.signUp {
+  background-color: #fff ; color: #242424; border: .5px solid #777; transition: .5s; 
+}
+div#wrap div.inner section article.login div.login form input.signUp:hover {
+  background-color: #242424; color: #ddd; border: .5px solid #777; font-weight: 700; cursor: pointer;
+}
+div#wrap div.inner section article.login div.login form span a {
+  font-size: .625em; display: inline-block; margin: 0 11.4% .5%; padding: 2% 0; color: #e0805d;
+}
+div#wrap div.inner section article.login div.login form span:nth-of-type(2) a {
+  margin: 0 11.4% 0 0;
+}
+div#wrap div.inner section article.login div.login button {
+  width: 33.38px; height: 33.38px;  font-size: larger; font-weight: bolder; background-color: #00b900; color: #fff; vertical-align: middle; border:  .5px solid #ddd; margin: -8% 10% 0 35.8%; cursor: pointer; transition: .5s;
+}
+div#wrap div.inner section article.login div.login button:hover {
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, .25);
+}
+div#wrap div.inner section article.login div.login button:nth-of-type(2) {
+  margin: -8% 35.8% 0 0;
+}
+div#wrap div.inner section article.login div.login button.loginKakao {
+  background-image: url(../img/login-kakao.png); background-color: #f2e500; background-size: cover; background-repeat: no-repeat;
+}
+
+/* shoppingBasket.html  */
+div#wrap div.inner section article.shoppingBasket {
+  width: 100%; box-sizing: border-box; margin: 0 auto;
+}
+div#wrap div.inner section article.shoppingBasket p.shoppingBasket {
+  padding: 4.284% 0 2.57%; color: #242424; font-weight: bold; font-size: 1.8em;
+}
+
+div#wrap div.inner section article.shoppingBasket div.shoppingBasket { 
+  width: 100%; background-color: rgba(0, 0, 0, .03);
+  height: 386px; border-radius: 20px; border-style: none;
+}
+div#wrap div.inner section article.shoppingBasket div.shoppingBasket span{ 
+  color: #242424; font-size: 1.5em; display: inline-block; text-align: center; width: 100%; height: 100%; line-height: 386px;;
+}
+
+/* BAG_IUGAMAKARAS.html */
+div#wrap div.inner section > h3 {
+  font-weight: normal; font-size: large; margin: 50px 50px 0;
+}
+div#wrap div.inner section > p {
+  font-weight: 600; font-size: 22px; margin: 30px 50px 30px;
+}
+div#wrap div.inner section div.product {
+  width: 100%; position: relative;
+}
+div#wrap div.inner section div.product div.swiper div.swiper-button-next, div#wrap div.inner section div.product div.swiper div.swiper-button-prev {
+  color: #fff; background-color: #242424; border-radius: 50%; width: 50px; height: 50px; scale: .8; opacity: .7; transition: .5s;
+}
+div#wrap div.inner section div.product div.swiper div.swiper-button-next:hover, div#wrap div.inner section div.product div.swiper div.swiper-button-prev:hover {
+  scale: .9; opacity: 1;
+}
+div#wrap div.inner section div.product div.swiper div.inner img{
+  width: 1200px; height: auto; margin: 0 auto;
+}
+div#wrap div.inner section div.product div.swiper div.inner h3 {
+  position: absolute; top: 10%; width: 300px; height: 450px; line-height: 1.8; right: 0; 
+}
+div#wrap div.inner section div.product div.swiper div.inner h3 small {
+  font-weight: normal;
+}
+div#wrap div.inner section div.product div.swiper div.inner > form {
+  position: absolute; right: 200px; top: 180px;
+}
+div#wrap div.inner section div.product div.swiper div.inner > form > select {
+  width: 50px; height: 50px; text-align: center; margin-left: 15px; font-size: large;
+}
+div#wrap div.inner section div.product div.swiper div.inner > form > span {
+  font-size: large;
+}
+div#wrap div.inner section div.product div.swiper div.inner > div {
+  position: absolute; right: 20px; top: 300px;
+}
+div#wrap div.inner section div.product div.swiper div.inner > div > button {
+  background-color: #242424; height: 50px; width: 130px; margin-right: 20px; color: #fff; transition: .5s; cursor: pointer;
+}
+div#wrap div.inner section div.product div.swiper div.inner > div > button:nth-of-type(2) {
+  background-color: transparent; color: #242424; margin-right: 0;
+}
+div#wrap div.inner section div.product div.swiper div.inner > div > button:hover {
+  background-color: #fff; color: #242424;
+}
+div#wrap div.inner section div.product div.swiper div.inner > div > button:nth-of-type(2):hover {
+  background-color: #242424; color: #fff;
+}
+
+
+
+
+
+/*  */
+
+div#wrap div.inner footer {
+  width: 100%; margin-top: 3.847%; box-sizing: border-box; border-top: 1px solid #ddd; padding-top: 3.847%;
+}
+div#wrap div.inner footer > div {
+  width: 100%; display: flex; justify-content: center; margin-bottom: 1.539%;
+}
+div#wrap div.inner footer > div > a, div#wrap div.inner footer div:last-child > p {
+  font-size: .875em;
+}
+div#wrap div.inner footer > div:nth-child(3) > a:hover {
+  text-decoration: underline;
+}
+div#wrap div.inner footer > div:nth-child(3) > span {
+  margin: 0 20px;
+}
+div#wrap div.inner footer > div:last-child {
+  padding-bottom: 3.847%;
+}
+div#wrap div.inner footer > div > p {
+  width: 80%; text-align: center; font-size: 0.625em; line-height: 1.8;
+}
+div#wrap div.inner footer > div > i {
+  margin-right: 2%; scale: 1.3; color: rgba(0, 0, 0, .3); cursor: pointer;
+}
+div#wrap div.inner footer > div > i:last-child {
+  margin-right: 0;
+}
+div#wrap div.inner footer > div > i:hover {
+  color: rgba(0, 0, 0, .7);
+}
+div#wrap div.inner footer > div > span a {
+  border: 2px solid rgba(0, 0, 0, .3); font-weight: normal; padding: 0.125em 0.5em; display: block; font-size: 0.8125em;
+}
+div#wrap div.inner footer > div > span:hover a {
+  border: 2px solid rgba(0, 0, 0, .7);
+}
+
+
+

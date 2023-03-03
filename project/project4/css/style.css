@@ -1,0 +1,520 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+* { margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; }
+li { list-style: none; }
+html, body { font-family: 'Merriweather', 'Noto Serif KR', serif; }
+
+div#wrap { 
+  width: 100%;
+}
+
+@media screen and (min-width: 1240px) {
+  header { 
+    width: 100%; position: fixed; top: 0; background-color: #262331; display: flex; align-items: center; justify-content: space-evenly; z-index: 3;
+  }
+  header h2 {
+    width: auto; line-height: 80px; box-sizing: border-box; transition: .5s;
+  }
+  header h2 a img {
+    width: 24px; height: auto; display: block; margin: 16px 0;
+  }
+  header nav {
+    width: 50%; 
+  }
+  header nav ul {
+    display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;
+  }
+  header nav ul li a {
+    display: block; font-size: 1.5em; color: #fff; transition: .5s;
+  }
+  header nav ul li a:hover {
+    color: rgb(174, 0, 255);
+  }
+  header div.utill {
+    width: 10%; display: flex; justify-content: space-between; 
+  }
+  header div.utill i {
+    font-size: 24px; color: #fff; transition: .5s;
+  }
+  header div.utill i:hover {
+    color: #ae00ff;
+  }
+  aside {
+    display: none;
+  }
+  section {
+    width: 100%; margin-top: 80px; transition: .5s;
+  }
+  section > article {
+    width: 100%;
+  }
+  section#main article.main video {
+    object-fit: cover; object-position: center; width: 100%; transition: .5s;
+  }
+  section#main article.container h3 {
+    width: 100%; margin: 50px auto 30px; text-align: center; font-size: 1.75em; transition: .5s;
+  }
+  section#main article.container div.cont {
+    width: 100%; padding: 32px; box-sizing: border-box; display: flex; margin-bottom: 100px; transition: .5s;
+  }
+  section#main article.container div.cont > div { 
+    width: calc(100% / 3); display: flex; flex-direction: column; align-items: center;
+  }
+  section#main article.container div.cont > div img { 
+    width: 95%; height: auto; cursor: pointer;
+    object-fit: cover; object-position: center; 
+  }
+  section#main article.container div.cont div h4 { 
+    width: 95%; 
+    padding-top: 10px; 
+  }
+  section#main article.container div.cont div h4 span { 
+    line-height: 1.3;
+  }
+  section#main article.container div.cont div h5 { 
+    width: 95%; text-align: right; padding-bottom: 20px; font-size: .875em;
+  }
+  
+  section#main article.container div.cont div:nth-of-type(1) h4 span { 
+    color: #c35daa; 
+  }
+  section#main article.container div.cont div:nth-of-type(2) h4 span { 
+    color: #a80000;
+  }
+  section#main article.container div.cont div:nth-of-type(3) h4 span { 
+    color: #ef8579;
+  }
+  footer { 
+    width: 100%; margin-top: 50px; margin: 0 auto;
+    padding-bottom: 80px; text-align: center; transition: .5s;
+  }
+  footer div.line { 
+    background-color: rgb(38, 35, 49); width: 100%; padding-bottom: 2px; margin-bottom: 50px; 
+  }
+  footer img { 
+    width: 298.31px; height: auto; margin: 50px auto 30px;
+  }
+  footer > div { 
+    width: inherit; margin-bottom: 15px; font-size: .9  em; line-height: 1.5; 
+  }
+  footer > div.channel a { 
+    display: inlien-block; width: auto; height: auto;
+  }
+  footer > div.channel a i { 
+    font-size: 2em; margin: 10px 5px; transition: .5s;
+  }
+  footer > div.channel a i:hover { 
+    color: rgba(174, 0, 255, .5); text-shadow: 3px 3px 7px rgba(174, 0, 255, .3);
+  }
+  
+  
+}
+
+@media screen and (min-width: 905px) and (max-width: 1239px) {
+  header { 
+    width: 100%; position: fixed; top: 0; background-color: rgb(38, 35, 49); display: flex; flex-direction: column; z-index: 3;
+  }
+  header h2 {
+    width: 100%; line-height: 70px; border-bottom: 1px solid rgb(174, 0, 255); box-sizing: border-box; transition: .5s;
+  }
+  header h2 a img {
+    width: 18px; height: auto; display: block; margin: 16px auto;
+  }
+  header nav {
+    width: 100%; line-height: 34px; transition: .5s;
+  }
+  header nav ul {
+  display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;
+  }
+  header nav ul li a {
+    display: block; font-size: .75em; color: #fff; transition: .5s;
+  }
+  header nav ul li a:hover {
+    color: rgb(174, 0, 255);
+  }
+  header div.utill {
+    display: none;
+  }
+  aside {
+    width: 100%; position: fixed; bottom: 0; display: flex; justify-content: space-evenly; align-items: center; padding: 36px auto; background-color: rgb(38, 35, 49); box-sizing: border-box; height: 56px; transition: .5s; z-index: 5;
+  }
+  aside a i {
+    font-size: 20px; color: #fff;  transition: .5s;
+  }
+  aside a i:hover {
+    color: rgb(174, 0, 255);
+  }
+  section {
+    width: 100%; margin-top: 103px; transition: .5s;
+  }
+  section > article {
+    width: 100%;
+  }
+  section#main article.main video {
+    object-fit: cover; object-position: center; width: 100%; transition: .5s;
+  }
+  section#main article.container h3 { 
+    width: 100%; margin: 50px auto 30px; text-align: center; transition: .5s;
+  }
+  section#main article.container div.cont {
+    width: 100%; padding: 32px; box-sizing: border-box; display: flex; margin-bottom: 75px; transition: .5s;
+  }
+  section#main article.container div.cont > div { 
+    width: calc(100% / 3); display: flex; flex-direction: column; align-items: center; transition: .5s;
+  }
+  section#main article.container div.cont > div img { 
+    width: 95%; height: auto; cursor: pointer;
+    object-fit: cover; object-position: center; 
+  }
+  section#main article.container div.cont div h4 { 
+    width: 95%; 
+    padding-top: 10px; 
+  }
+  section#main article.container div.cont div h4 span { 
+    line-height: 1.3; 
+  }
+  section#main article.container div.cont div h5 { 
+    width: 95%; text-align: right; padding-bottom: 20px;
+  }
+
+  section#main article.container div.cont div:nth-of-type(1) h4 span { 
+    color: #c35daa; 
+  }
+  section#main article.container div.cont div:nth-of-type(2) h4 span { 
+    color: #a80000;
+  }
+  section#main article.container div.cont div:nth-of-type(3) h4 span { 
+    color: #ef8579;
+  }
+  footer { 
+    width: 100%; margin-top: 50px; margin: 0 auto;
+    padding-bottom: 80px; text-align: center; transition: .5s;
+  }
+  footer div.line { 
+    background-color: rgb(38, 35, 49); width: 100%; padding-bottom: 2px; margin-bottom: 50px;
+  }
+  footer img { 
+    width: 298.31px; height: auto; margin: 50px auto 30px;
+  }
+  footer > div { 
+    width: inherit; margin-bottom: 15px; font-size: .8em; line-height: 1.5;
+  }
+  footer > div.channel a { 
+    display: inlien-block; width: auto; height: auto;
+  }
+  footer > div.channel a i { 
+    font-size: 1.7em; margin: 10px 5px; transition: .5s;
+  }
+  footer > div.channel a i:hover { 
+    color: rgba(174, 0, 255, .5); text-shadow: 3px 3px 7px rgba(174, 0, 255, .3);
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 904px) {
+  header { 
+    width: 100%; position: fixed; top: 0; background-color: rgb(38, 35, 49); display: flex; flex-direction: column; z-index: 3;
+  }
+  header h2 {
+    width: 100%; line-height: 70px; border-bottom: 1px solid rgb(174, 0, 255); box-sizing: border-box; transition: .5s;
+  }
+  header h2 a img {
+    width: 18px; height: auto; display: block; margin: 16px auto;
+  }
+  header nav {
+    width: 100%; line-height: 34px; transition: .5s;
+  }
+  header nav ul { 
+    display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; 
+  }
+  header nav ul li a {
+    display: block; font-size: .75em; color: #fff;
+  }
+  header nav ul li a:hover {
+    color: rgb(174, 0, 255);
+  }
+  header div.utill {
+    display: none;
+  }
+  aside {
+    width: 100%; position: fixed; bottom: 0; display: flex; justify-content: space-evenly; align-items: center; padding: 36px auto; background-color: rgb(38, 35, 49); box-sizing: border-box; height: 56px; transition: .5s; z-index: 5;
+  }
+  aside a i {
+    font-size: 20px; color: #fff; transition: .5s;
+  }
+  aside a i:hover {
+    color: rgb(174, 0, 255);
+  }
+  section {
+    width: 100%; margin-top: 103px; transition: .5s;
+  }
+  section > article {
+    width: 100%; 
+  }
+  section#main article.main video {
+    object-fit: cover; object-position: center; width: 100%; transition: .5s;
+  }
+  section#main article.container h3 {
+    width: 100%; margin:50px auto 30px; text-align: center; transition: .5s;
+  }
+  section#main article.container div.cont {
+    width: 100%; padding: 16px; box-sizing: border-box; margin-bottom: 50px; transition: .5s;
+  }
+  section#main article.container div.cont div { 
+    width: inherit; 
+  }
+  section#main article.container div.cont div img { 
+    width: inherit; height: auto; cursor: pointer;
+    object-fit: cover; object-position: center; 
+  }
+  section#main article.container div.cont div h4 { 
+    width: inherit;
+    margin-top: 10px; 
+  }
+  section#main article.container div.cont div h4 span { 
+    line-height: 1.3; 
+  }
+  section#main article.container div.cont div h5 { 
+    text-align: right; margin-bottom: 20px;
+  }
+
+  section#main article.container div.cont div:nth-of-type(1) h4 span { 
+    color: #c35daa; 
+  }
+  section#main article.container div.cont div:nth-of-type(2) h4 span { 
+    color: #a80000;
+  }
+  section#main article.container div.cont div:nth-of-type(3) h4 span { 
+    color: #ef8579;
+  }
+  footer { 
+    width: 100%; margin-top: 50px; margin: 0 auto;
+    padding-bottom: 80px; text-align: center; transition: .5s;
+  }
+  footer div.line { 
+    background-color: rgb(38, 35, 49); width: 100%; padding-bottom: 2px; margin-bottom: 50px;
+  }
+  footer img { 
+    width: 33%; height: auto; margin: 40px auto 30px;
+  }
+  footer > div { 
+    width: inherit; margin-bottom: 15px; font-size: .8em; line-height: 1.5;
+  }
+  footer > div.channel a { 
+    display: inlien-block; width: auto; height: auto;
+  }
+  footer > div.channel a i { 
+    font-size: 1.7em; margin: 10px 5px; transition: .5s;
+  }
+  footer > div.channel a i:hover { 
+    color: rgba(174, 0, 255, .5); text-shadow: 2px 2px 5.3px rgba(174, 0, 255, .3);
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 361px) and (max-width: 599px) {
+  header { 
+    width: 100%; position: fixed; top: 0; background-color: rgb(38, 35, 49); display: flex; flex-direction: column; z-index: 3;
+  }
+  header h2 {
+    width: 100%; line-height: 70px; border-bottom: 1px solid rgb(174, 0, 255); box-sizing: border-box; transition: .5s;
+  }
+  header h2 a img {
+    width: 18px; height: auto; display: block; margin: 16px auto;
+  }
+  header nav {
+    width: 100%; line-height: 34px; transition: .5s;
+  }
+  header nav ul {
+    display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;
+  }
+  header nav ul li a {
+    display: block; font-size: .75em; color: #fff; transition: .5s;
+  }
+  header nav ul li a:hover {
+    color: rgb(174, 0, 255);
+  }
+  header div.utill {
+    display: none;
+  }
+  aside {
+    width: 100%; position: fixed; bottom: 0; display: flex; justify-content: space-evenly; align-items: center; padding: 16px auto; background-color: rgb(38, 35, 49); box-sizing: border-box; height: 56px; transition: .5s; z-index: 5;
+  }
+  aside a i {
+    font-size: 20px; color: #fff; transition: .5s;
+  }
+  aside a i:hover {
+    color: rgb(174, 0, 255);
+  }
+  section {
+    width: 100%; margin-top: 103px;
+  }
+  section > article {
+    width: 100%;
+  }
+  section#main article.main video {
+    object-fit: cover; object-position: center; width: 100%; transition: .5s;
+  }
+  section#main article.container h3 {
+    width: 100%; margin:50px auto 30px; text-align: center; transition: .5s;
+  }
+  section#main article.container div.cont {
+    width: 100%; padding: 16px; box-sizing: border-box; margin-bottom: 50px; transition: .5s;
+  }
+  section#main article.container div.cont div { 
+    width: inherit;  
+  }
+  section#main article.container div.cont div img { 
+    width: inherit; height: auto; cursor: pointer;
+    object-fit: cover; object-position: center; 
+  }
+  section#main article.container div.cont div h4 { 
+    width: inherit;
+    margin-top: 10px; 
+  }
+  section#main article.container div.cont div h4 span { 
+    line-height: 1.3; 
+  }
+  section#main article.container div.cont div h5 { 
+    text-align: right; margin-bottom: 25px;
+  }
+
+  section#main article.container div.cont div:nth-of-type(1) h4 span { 
+    color: #c35daa; 
+  }
+  section#main article.container div.cont div:nth-of-type(2) h4 span { 
+    color: #a80000;
+  }
+  section#main article.container div.cont div:nth-of-type(3) h4 span { 
+    color: #ef8579;
+  }
+  footer { 
+    width: 100%; margin-top: 50px; margin: 0 auto;
+    padding-bottom: 80px; text-align: center; transition: .5s;
+  }
+  footer div.line { 
+    background-color: rgb(38, 35, 49); width: 100%; padding-bottom: 2px; margin-bottom: 50px;
+  }
+  footer img { 
+    width: 34%; height: auto; margin-bottom: 30px;
+  }
+  footer > div { 
+    width: inherit; margin-bottom: 10px; font-size: .625em; line-height: 1.5;
+  }
+  footer > div.channel a { 
+    display: inlien-block; width: auto; height: auto;
+  }
+  footer > div.channel a i { 
+    font-size: 1.7em; margin: 10px 5px; transition: .5s;
+  }
+  footer > div.channel a i:hover { 
+    color: rgba(174, 0, 255, .5); text-shadow: 2px 2px 5.3px rgba(174, 0, 255, .3);
+  }
+}
+
+
+
+@media screen and (max-width: 360px) {
+  header { 
+    width: 100%; position: fixed; top: 0; background-color: rgb(38, 35, 49); display: flex; flex-direction: column; z-index: 3;
+  }
+  header h2 {
+    width: 100%; line-height: 70px; border-bottom: 1px solid rgb(174, 0, 255); box-sizing: border-box; transition: .5s;
+  }
+  header h2 a img {
+    width: 18px; height: auto; display: block; margin: 16px auto;
+  }
+  header nav {
+    width: 100%; line-height: 34px; transition: .5s;
+  }
+  header nav ul {
+    display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;
+  }
+  header nav ul li a {
+    display: block; font-size: .75em; color: #fff; transition: .5s;
+  }
+  header nav ul li a:hover {
+    color: rgb(174, 0, 255);
+  }
+  header div.utill {
+    display: none;
+  }
+  aside {
+    width: 100%; position: fixed; bottom: 0; display: flex; justify-content: space-evenly; align-items: center; padding: 16px auto; background-color: rgb(38, 35, 49); box-sizing: border-box; height: 56px; transition: .5s; z-index: 5;
+  }
+  aside a i {
+    font-size: 20px; color: #fff; transition: .5s; 
+  }
+  aside a i:hover {
+    color: rgb(174, 0, 255);
+  }
+  section {
+    width: 100%; margin-top: 103px; transition: .5s;
+  }
+  section > article {
+    width: 100%;
+  }
+  section#main article.main video {
+    object-fit: cover; object-position: center; width: 100%; transition: .5s;
+  }
+  section#main article.container h3 {
+    width: 100%; margin:50px auto 30px; text-align: center; transition: .5s;
+  }
+  section#main article.container div.cont {
+    width: 100%; padding: 16px; box-sizing: border-box; margin-bottom: 30px; transition: .5s;
+  }
+  section#main article.container div.cont div { 
+    width: inherit;  
+  }
+  section#main article.container div.cont div img { 
+    width: inherit; height: auto; cursor: pointer;
+    object-fit: cover; object-position: center; 
+  }
+  section#main article.container div.cont div h4 { 
+    width: inherit;
+    margin-top: 10px; 
+  }
+  section#main article.container div.cont div h4 span { 
+    line-height: 1.3; 
+  }
+  section#main article.container div.cont div h5 { 
+    text-align: right; margin-bottom: 20px;
+  }
+
+  section#main article.container div.cont div:nth-of-type(1) h4 span { 
+    color: #c35daa; 
+  }
+  section#main article.container div.cont div:nth-of-type(2) h4 span { 
+    color: #a80000;
+  }
+  section#main article.container div.cont div:nth-of-type(3) h4 span { 
+    color: #ef8579;
+  }
+  footer { 
+    width: 100%; margin-top: 50px; margin: 0 auto;
+    padding-bottom: 80px; text-align: center; transition: .5s;
+  }
+  footer div.line { 
+    background-color: rgb(38, 35, 49); width: 100%; padding-bottom: 2px; margin-bottom: 50px;
+  }
+  footer img { 
+    width: 33%; height: auto; margin-bottom: 20px;
+  }
+  footer > div { 
+    width: inherit; margin-bottom: 10px; font-size: .625em; line-height: 1.5;
+  }
+  footer > div.channel a { 
+    display: inlien-block; width: auto; height: auto;
+  }
+  footer > div.channel a i { 
+    font-size: 1.7em; margin: 10px 5px; transition: .5s;
+  }
+  footer > div.channel a i:hover { 
+    color: rgba(174, 0, 255, .5); text-shadow: 2px 2px 5.3px rgba(174, 0, 255, .3);
+  }
+}
